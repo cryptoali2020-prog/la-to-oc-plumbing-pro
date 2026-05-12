@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L.A to O.C Plumbing Pro | 24/7 Experts</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
+  <body class="relative">
+    
+    <!-- Top Bar -->
+    <div class="bg-gray-900 text-white py-2 text-sm">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2">
+        <span class="flex items-center gap-2 font-medium">
+          <i class="fas fa-clock text-secondary animate-pulse"></i>
+          24/7 Emergency Plumbing Services
+        </span>
+        <div class="flex items-center gap-6">
+          <a href="tel:+13232398505" class="flex items-center gap-2 hover:text-secondary transition-colors font-bold">
+            <i class="fas fa-phone"></i>
+            +1 323-239-8505
+          </a>
+          <span class="hidden sm:flex items-center gap-2">
+            <i class="fas fa-star text-yellow-500"></i>
+            5.0 Rated Plumbing Experts
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md transition-all duration-300">
+      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2">
+          <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white text-xl">
+            <i class="fas fa-faucet-drip"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xl font-bold font-space text-gray-900 leading-none">LA <span class="text-secondary">TO</span> OC</span>
+            <span class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Plumbing Pro</span>
+          </div>
+        </a>
+
+        <!-- Desktop Links -->
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#why" class="nav-link">Why Us</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="tel:+13232398505" class="btn btn-primary py-2 px-6">
+            <i class="fas fa-phone-alt text-sm"></i> Call Now
+          </a>
+        </nav>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="lg:hidden text-2xl text-gray-900 p-2">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-primary text-white flex flex-col p-8 lg:hidden">
+      <div class="flex justify-between items-center mb-12">
+        <span class="text-2xl font-bold">LA to OC</span>
+        <button id="close-menu-btn" class="text-3xl"><i class="fas fa-times"></i></button>
+      </div>
+      <nav class="flex flex-col gap-8 text-2xl font-bold">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+13232398505" class="flex items-center gap-4 text-secondary mt-4">
+          <i class="fas fa-phone-alt"></i> +1 323-239-8505
+        </a>
+      </nav>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="relative min-h-[90vh] flex items-center pt-10 overflow-hidden bg-gray-50">
+        <!-- Animated Background Shapes -->
+        <div class="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-100/50 rounded-full blur-3xl -mr-20 -mt-20"></div>
+        <div class="absolute bottom-0 left-0 w-1/4 h-1/4 bg-orange-100/50 rounded-full blur-3xl -ml-20 -mb-20"></div>
+        
+        <div class="container mx-auto px-4 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+          <div class="reveal">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100 text-primary text-sm font-bold mb-6">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+              </span>
+              24/7 Priority Emergency Response
+            </div>
+            <h1 class="text-5xl lg:text-7xl font-bold font-space leading-[1.1] text-gray-900 mb-6">
+              Fast & Reliable <br>
+              <span class="text-primary italic">Plumbing</span> Services
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-xl leading-relaxed">
+              Trusted by thousands of home and business owners in <span class="font-bold text-gray-900">Los Angeles</span> and <span class="font-bold text-gray-900">Orange County</span>. Expert repairs, 24 hours a day.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="tel:13232398505" class="btn btn-primary px-8 py-4 text-lg">
+                <i class="fas fa-phone-alt"></i> Call Now
+              </a>
+              <a href="#contact" class="btn btn-secondary px-8 py-4 text-lg">
+                Get Free Estimate
+              </a>
+            </div>
+            <div class="mt-10 flex items-center gap-4 text-gray-500">
+              <div class="flex -space-x-3">
+                <img src="https://i.pravatar.cc/100?u=1" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                <img src="https://i.pravatar.cc/100?u=2" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                <img src="https://i.pravatar.cc/100?u=3" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+              </div>
+              <p class="text-sm">Join <span class="font-bold text-gray-900">1,000+</span> satisfied local customers</p>
+            </div>
+          </div>
+          <div class="reveal relative lg:block">
+            <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl floating">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800" alt="Plumbing Service" class="w-full h-auto" referrerPolicy="no-referrer">
+              <!-- Glass Badge -->
+              <div class="absolute bottom-6 left-6 right-6 p-6 glass rounded-2xl">
+                <div class="flex items-center gap-4 text-white">
+                  <div class="text-4xl text-secondary"><i class="fas fa-award"></i></div>
+                  <div>
+                    <p class="font-bold text-lg leading-tight uppercase tracking-wide">License No. #109432</p>
+                    <p class="text-sm opacity-80">Serving LA & OC for 15+ years</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Background Decoration -->
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary/10 rounded-full flex items-center justify-center -z-10">
+              <div class="w-20 h-20 bg-secondary/20 rounded-full"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-24 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-4">
+          <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+            <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">Our Expertise</h2>
+            <h3 class="text-4xl lg:text-5xl font-bold font-space mb-6">Premium Plumbing Solutions</h3>
+            <p class="text-gray-600 text-lg">From minor leaks to major pipe failures, we have the modern equipment and expertise to handle it all.</p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Service 1 -->
+            <div class="service-card reveal">
+              <div class="service-icon"><i class="fas fa-bolt"></i></div>
+              <h4 class="text-xl font-bold">Emergency Plumbing</h4>
+              <p class="text-gray-500 leading-relaxed">Available 24/7 for burst pipes, flooding, or severe leaks.</p>
+              <a href="#contact" class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all mt-auto pt-4">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+            </div>
+            <!-- Service 2 -->
+            <div class="service-card reveal">
+              <div class="service-icon"><i class="fas fa-search"></i></div>
+              <h4 class="text-xl font-bold">Leak Detection</h4>
+              <p class="text-gray-500 leading-relaxed">Electronic leak detection to find hidden issues without damage.</p>
+              <a href="#contact" class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all mt-auto pt-4">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+            </div>
+            <!-- Service 3 -->
+            <div class="service-card reveal">
+              <div class="service-icon"><i class="fas fa-broom"></i></div>
+              <h4 class="text-xl font-bold">Drain Cleaning</h4>
+              <p class="text-gray-500 leading-relaxed">Professional rooter service for tough clogs and slow drains.</p>
+              <a href="#contact" class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all mt-auto pt-4">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+            </div>
+            <!-- Service 4 -->
+            <div class="service-card reveal">
+              <div class="service-icon"><i class="fas fa-hot-tub"></i></div>
+              <h4 class="text-xl font-bold">Water Heaters</h4>
+              <p class="text-gray-500 leading-relaxed">Repair and installation of tankless and traditional heaters.</p>
+              <a href="#contact" class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all mt-auto pt-4">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+            </div>
+            <!-- Service 5 -->
+            <div class="service-card reveal">
+              <div class="service-icon"><i class="fas fa-vial"></i></div>
+              <h4 class="text-xl font-bold">Sewer Repair</h4>
+              <p class="text-gray-500 leading-relaxed">Advanced trenchless sewer repair and camera inspections.</p>
+              <a href="#contact" class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all mt-auto pt-4">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+            </div>
+            <!-- Service 6 -->
+            <div class="service-card reveal">
+              <div class="service-icon"><i class="fas fa-tools"></i></div>
+              <h4 class="text-xl font-bold">Pipe Installation</h4>
+              <p class="text-gray-500 leading-relaxed">Copper and PEX repiping for homes and businesses.</p>
+              <a href="#contact" class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all mt-auto pt-4">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+            </div>
+            <!-- Service 7 -->
+            <div class="service-card reveal">
+              <div class="service-icon"><i class="fas fa-toilet"></i></div>
+              <h4 class="text-xl font-bold">Toilet Repair</h4>
+              <h4 class="text-xl font-bold opacity-0 h-0 w-0">Hidden</h4>
+              <p class="text-gray-500 leading-relaxed">Fixing leaks, clogs, and installing modern low-flow toilets.</p>
+              <a href="#contact" class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all mt-auto pt-4">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+            </div>
+            <!-- Service 8 -->
+            <div class="service-card reveal">
+              <div class="service-icon"><i class="fas fa-utensils"></i></div>
+              <h4 class="text-xl font-bold">Kitchen Plumbing</h4>
+              <p class="text-gray-500 leading-relaxed">Garbage disposals, faucets, and dishwashers plumbing.</p>
+              <a href="#contact" class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all mt-auto pt-4">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-24 bg-gray-50 overflow-hidden">
+        <div class="container mx-auto px-4">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative reveal order-2 lg:order-1">
+              <div class="rounded-3xl overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1607472586893-edb5daef0d74?auto=format&fit=crop&q=80&w=800" alt="Latino Owned Plumbing Business" class="w-full h-auto" referrerPolicy="no-referrer">
+              </div>
+              <!-- Floating Card -->
+              <div class="absolute -bottom-10 -right-10 bg-white p-8 rounded-3xl shadow-xl max-w-xs reveal">
+                <p class="text-primary font-bold text-4xl mb-2">15+</p>
+                <p class="text-gray-500 font-medium">Years of dedicated service in the SoCal area.</p>
+              </div>
+            </div>
+            <div class="reveal order-1 lg:order-2">
+              <h2 class="text-orange-500 font-bold uppercase tracking-widest text-sm mb-4">Our Story</h2>
+              <h3 class="text-4xl lg:text-5xl font-bold font-space mb-8">Serving LA & OC with Heart and Skill</h3>
+              <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                As a family-owned, <span class="text-gray-900 font-bold">Latino-owned business</span>, L.A to O.C Plumbing Pro was built on the values of hard work, integrity, and exceptional service. We understand the importance of a safe and functional home for your family.
+              </p>
+              <div class="grid sm:grid-cols-2 gap-6 mb-10">
+                <div class="flex gap-4">
+                  <div class="text-primary text-xl"><i class="fas fa-check-circle"></i></div>
+                  <div>
+                    <h5 class="font-bold mb-1">Skilled Technicians</h5>
+                    <p class="text-sm text-gray-500">Fully licensed and insured experts.</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="text-primary text-xl"><i class="fas fa-check-circle"></i></div>
+                  <div>
+                    <h5 class="font-bold mb-1">Fast Response</h5>
+                    <p class="text-sm text-gray-500">Arriving when we say we will.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 bg-white rounded-2xl border-l-4 border-secondary shadow-sm">
+                <p class="italic text-gray-700">"Our mission is to provide premium plumbing at fair prices, treating every customer like family."</p>
+                <p class="mt-4 font-bold">— The Mendoza Family, Founders</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Counter Section -->
+      <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4">
+          <div class="grid md:grid-cols-4 gap-12 text-center">
+            <div class="reveal">
+              <span class="counter block mb-2 text-white" data-target="109">0</span>
+              <p class="text-blue-100 font-medium uppercase tracking-wide text-sm">Happy Reviews</p>
+            </div>
+            <div class="reveal">
+              <span class="counter block mb-2 text-white" data-target="24">0</span>
+              <p class="text-blue-100 font-medium uppercase tracking-wide text-sm">Hours of Service</p>
+            </div>
+            <div class="reveal">
+              <span class="counter block mb-2 text-white" data-target="5000">0</span>
+              <p class="text-blue-100 font-medium uppercase tracking-wide text-sm">Jobs Completed</p>
+            </div>
+            <div class="reveal">
+              <span class="counter block mb-2 text-white" data-target="5">5</span>
+              <p class="text-blue-100 font-medium uppercase tracking-wide text-sm">Star Ratings</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section id="why" class="py-24 bg-white relative">
+        <div class="container mx-auto px-4">
+          <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+            <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">Why Local Pros?</h2>
+            <h3 class="text-4xl lg:text-5xl font-bold font-space">The Plumbing Pro Advantage</h3>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-10 bg-gray-50 rounded-3xl hover:bg-white hover:shadow-2xl transition-all duration-300 reveal group">
+              <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-primary text-3xl mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300 shadow-sm">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h4 class="text-2xl font-bold mb-4">24/7 Availability</h4>
+              <p class="text-gray-600 leading-relaxed">Plumbing emergencies don't wait for business hours. Neither do we.</p>
+            </div>
+            <div class="p-10 bg-gray-50 rounded-3xl hover:bg-white hover:shadow-2xl transition-all duration-300 reveal group">
+              <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-primary text-3xl mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300 shadow-sm">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+              <h4 class="text-2xl font-bold mb-4">Affordable Pricing</h4>
+              <p class="text-gray-600 leading-relaxed">Honest quotes with no hidden fees. We work with your budget.</p>
+            </div>
+            <div class="p-10 bg-gray-50 rounded-3xl hover:bg-white hover:shadow-2xl transition-all duration-300 reveal group">
+              <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-primary text-3xl mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300 shadow-sm">
+                <i class="fas fa-id-card"></i>
+              </div>
+              <h4 class="text-2xl font-bold mb-4">Licensed Experts</h4>
+              <p class="text-gray-600 leading-relaxed">Every plumber is highly trained, certified, and background checked.</p>
+            </div>
+            <div class="p-10 bg-gray-50 rounded-3xl hover:bg-white hover:shadow-2xl transition-all duration-300 reveal group">
+              <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-primary text-3xl mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300 shadow-sm">
+                <i class="fas fa-truck-fast"></i>
+              </div>
+              <h4 class="text-2xl font-bold mb-4">Fast Arrival</h4>
+              <p class="text-gray-600 leading-relaxed">Strategic dispatching ensures we reach you in LA or OC quickly.</p>
+            </div>
+            <div class="p-10 bg-gray-50 rounded-3xl hover:bg-white hover:shadow-2xl transition-all duration-300 reveal group">
+              <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-primary text-3xl mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300 shadow-sm">
+                <i class="fas fa-smile"></i>
+              </div>
+              <h4 class="text-2xl font-bold mb-4">100% Satisfaction</h4>
+              <p class="text-gray-600 leading-relaxed">Your satisfaction is our top priority. We don't leave until it's right.</p>
+            </div>
+            <div class="p-10 bg-gray-50 rounded-3xl hover:bg-white hover:shadow-2xl transition-all duration-300 reveal group">
+              <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-primary text-3xl mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300 shadow-sm">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <h4 class="text-2xl font-bold mb-4">Modern Equipment</h4>
+              <p class="text-gray-600 leading-relaxed">Using the latest tech for non-invasive repairs and inspections.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="py-24 bg-gray-900 text-white overflow-hidden">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col lg:flex-row justify-between items-end gap-8 mb-16 reveal">
+            <div class="max-w-2xl">
+              <h2 class="text-secondary font-bold uppercase tracking-widest text-sm mb-4">Customer Praise</h2>
+              <h3 class="text-4xl lg:text-5xl font-bold font-space">What Our Clients Say</h3>
+            </div>
+            <div class="flex items-center gap-4 bg-white/5 p-4 rounded-2xl border border-white/10">
+              <div class="text-3xl text-yellow-500 font-bold">5.0</div>
+              <div class="text-sm">
+                <div class="text-yellow-500 mb-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="opacity-70">109 Google Reviews</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-container flex overflow-x-auto gap-8 pb-8 no-scrollbar snap-x">
+            <!-- Review 1 -->
+            <div class="min-w-[320px] md:min-w-[450px] p-8 bg-white/5 rounded-3xl border border-white/10 snap-center reveal">
+              <div class="flex items-center gap-4 mb-6">
+                <img src="https://i.pravatar.cc/100?u=a" class="w-14 h-14 rounded-full" alt="Client">
+                <div>
+                  <h5 class="font-bold text-lg">Robert Johnson</h5>
+                  <p class="text-sm opacity-60">Los Angeles, CA</p>
+                </div>
+                <div class="ml-auto text-yellow-500"><i class="fas fa-star"></i> 5.0</div>
+              </div>
+              <p class="text-lg opacity-80 leading-relaxed">"Woke up to a flooded kitchen on a Saturday morning. LA to OC Plumbing Pro was here in 45 minutes. Professional, clean, and reasonably priced. Lifesavers!"</p>
+            </div>
+            <!-- Review 2 -->
+            <div class="min-w-[320px] md:min-w-[450px] p-8 bg-white/5 rounded-3xl border border-white/10 snap-center reveal">
+              <div class="flex items-center gap-4 mb-6">
+                <img src="https://i.pravatar.cc/100?u=b" class="w-14 h-14 rounded-full" alt="Client">
+                <div>
+                  <h5 class="font-bold text-lg">Maria Garcia</h5>
+                  <p class="text-sm opacity-60">Irvine, OC</p>
+                </div>
+                <div class="ml-auto text-yellow-500"><i class="fas fa-star"></i> 5.0</div>
+              </div>
+              <p class="text-lg opacity-80 leading-relaxed">"Excellent service installing our new tankless water heater. Highly recommend for any Latino families looking for bilingual and respectful pros."</p>
+            </div>
+            <!-- Review 3 -->
+            <div class="min-w-[320px] md:min-w-[450px] p-8 bg-white/5 rounded-3xl border border-white/10 snap-center reveal">
+              <div class="flex items-center gap-4 mb-6">
+                <img src="https://i.pravatar.cc/100?u=c" class="w-14 h-14 rounded-full" alt="Client">
+                <div>
+                  <h5 class="font-bold text-lg">James Wilson</h5>
+                  <p class="text-sm opacity-60">Santa Ana, CA</p>
+                </div>
+                <div class="ml-auto text-yellow-500"><i class="fas fa-star"></i> 5.0</div>
+              </div>
+              <p class="text-lg opacity-80 leading-relaxed">"Finding a plumber you can trust is hard. These guys are my go-to for my rental properties now. Honest communication and they do it right the first time."</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="py-24 bg-white relative">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <div class="text-center mb-16 reveal">
+            <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">Any Questions?</h2>
+            <h3 class="text-4xl font-bold font-space">Common Plumbing Inquiries</h3>
+          </div>
+
+          <div class="space-y-4">
+            <!-- FAQ 1 -->
+            <div class="faq-item border border-gray-200 rounded-2xl reveal overflow-hidden">
+              <div class="faq-header p-6 flex justify-between items-center cursor-pointer hover:bg-gray-50 transition-colors">
+                <h4 class="font-bold text-lg">Do you provide emergency plumbing?</h4>
+                <div class="faq-icon transition-transform duration-300 text-primary"><i class="fas fa-chevron-down"></i></div>
+              </div>
+              <div class="faq-content px-6">
+                <p class="text-gray-600">Yes! We provide 24/7 emergency services for both residential and commercial clients in Los Angeles and Orange County. We prioritize rapid response for immediate hazards like flooding or sewage backup.</p>
+              </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="faq-item border border-gray-200 rounded-2xl reveal overflow-hidden">
+              <div class="faq-header p-6 flex justify-between items-center cursor-pointer hover:bg-gray-50 transition-colors">
+                <h4 class="font-bold text-lg">Are you available 24 hours?</h4>
+                <div class="faq-icon transition-transform duration-300 text-primary"><i class="fas fa-chevron-down"></i></div>
+              </div>
+              <div class="faq-content px-6">
+                <p class="text-gray-600">Correct. Our dispatch team is available 24 hours a day, 365 days a year. We understand that plumbing issues don't happen on a schedule.</p>
+              </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="faq-item border border-gray-200 rounded-2xl reveal overflow-hidden">
+              <div class="faq-header p-6 flex justify-between items-center cursor-pointer hover:bg-gray-50 transition-colors">
+                <h4 class="font-bold text-lg">What areas do you serve?</h4>
+                <div class="faq-icon transition-transform duration-300 text-primary"><i class="fas fa-chevron-down"></i></div>
+              </div>
+              <div class="faq-content px-6">
+                <p class="text-gray-600">We serve the entire Los Angeles County and Orange County areas. From the San Fernando Valley down to San Clemente, we have technicians stationed throughout SoCal for fast arrival.</p>
+              </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="faq-item border border-gray-200 rounded-2xl reveal overflow-hidden">
+              <div class="faq-header p-6 flex justify-between items-center cursor-pointer hover:bg-gray-50 transition-colors">
+                <h4 class="font-bold text-lg">Do you offer free estimates?</h4>
+                <div class="faq-icon transition-transform duration-300 text-primary"><i class="fas fa-chevron-down"></i></div>
+              </div>
+              <div class="faq-content px-6">
+                <p class="text-gray-600">We offer straightforward, flat-rate pricing. For many standard issues, we can provide a ballpark estimate over the phone. For more complex issues, we provide a written quote before any work begins.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <div class="grid lg:grid-cols-2 gap-16">
+            <div class="reveal">
+              <h2 class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Contact Us</h2>
+              <h3 class="text-4xl lg:text-5xl font-bold font-space mb-8">Get Your Plumbing Fixed Today</h3>
+              <p class="text-gray-600 text-lg mb-10">Fill out the form below or call us directly for immediate assistance. Our experts are ready to help!</p>
+              
+              <div class="space-y-6 mb-10">
+                <a href="tel:+13232398505" class="flex items-center gap-6 p-6 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-all group">
+                  <div class="w-14 h-14 rounded-2xl bg-blue-50 text-primary flex items-center justify-center text-2xl group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500 font-bold uppercase tracking-widest mb-1">Call Anytime</p>
+                    <p class="text-2xl font-bold text-gray-900">+1 323-239-8505</p>
+                  </div>
+                </a>
+                <div class="flex items-center gap-6 p-6 bg-white rounded-3xl shadow-sm border border-gray-100">
+                  <div class="w-14 h-14 rounded-2xl bg-orange-50 text-orange-500 flex items-center justify-center text-2xl">
+                    <i class="fas fa-business-time"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500 font-bold uppercase tracking-widest mb-1">Business Hours</p>
+                    <p class="text-xl font-bold text-gray-900">Open 24 Hours / 7 Days</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Map Placeholder -->
+              <div class="rounded-3xl overflow-hidden shadow-inner bg-gray-200 h-64 relative group">
+                <div class="absolute inset-0 bg-cover bg-center opacity-40 group-hover:scale-105 transition-transform duration-1000" style="background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800')"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="bg-white/90 backdrop-blur px-6 py-4 rounded-full shadow-xl flex items-center gap-3">
+                    <i class="fas fa-location-dot text-primary text-xl"></i>
+                    <span class="font-bold">Serving All LA & OC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal">
+              <form id="contact-form" class="bg-white p-10 rounded-[2rem] shadow-2xl border border-gray-100">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Name</label>
+                    <input type="text" required class="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:bg-white transition-all">
+                  </div>
+                  <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Phone</label>
+                    <input type="tel" required class="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:bg-white transition-all">
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Email</label>
+                  <input type="email" required class="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:bg-white transition-all">
+                </div>
+                <div class="mb-8">
+                  <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Service Needed</label>
+                  <select class="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:bg-white transition-all appearance-none cursor-pointer">
+                    <option>Emergency Repair</option>
+                    <option>Leak Detection</option>
+                    <option>Drain Cleaning</option>
+                    <option>Water Heater</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="mb-8">
+                  <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Message</label>
+                  <textarea rows="4" required class="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:bg-white transition-all resize-none"></textarea>
+                </div>
+                <button type="submit" class="w-full btn btn-primary py-5 text-xl font-bold rounded-2xl">
+                  Send Message <i class="fas fa-paper-plane text-sm"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-20 pb-10">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <div class="reveal">
+            <a href="#" class="flex items-center gap-2 mb-8">
+              <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white text-xl">
+                <i class="fas fa-faucet-drip"></i>
+              </div>
+              <span class="text-xl font-bold font-space">LA to OC Plumbing</span>
+            </a>
+            <p class="text-gray-400 mb-8 leading-relaxed">Your trusted local plumbing experts in Los Angeles and Orange County. 24/7 emergency response since 2008.</p>
+            <div class="flex gap-4">
+              <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary transition-colors duration-300"><i class="fab fa-yelp"></i></a>
+            </div>
+          </div>
+          
+          <div class="reveal">
+            <h5 class="text-xl font-bold mb-8 relative inline-block">Quick Links <span class="absolute bottom-0 left-0 w-8 h-1 bg-primary"></span></h5>
+            <ul class="space-y-4 text-gray-400">
+              <li><a href="#services" class="hover:text-white transition-colors">Expert Services</a></li>
+              <li><a href="#about" class="hover:text-white transition-colors">Our Story</a></li>
+              <li><a href="#why" class="hover:text-white transition-colors">Why Choose Us</a></li>
+              <li><a href="#contact" class="hover:text-white transition-colors">Contact Pro</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+            </ul>
+          </div>
+          
+          <div class="reveal">
+            <h5 class="text-xl font-bold mb-8 relative inline-block">Major Services <span class="absolute bottom-0 left-0 w-8 h-1 bg-primary"></span></h5>
+            <ul class="space-y-4 text-gray-400">
+              <li><a href="#" class="hover:text-white transition-colors"><i class="fas fa-caret-right text-primary mr-2"></i> Leak Detection</a></li>
+              <li><a href="#" class="hover:text-white transition-colors"><i class="fas fa-caret-right text-primary mr-2"></i> Sewer Repairs</a></li>
+              <li><a href="#" class="hover:text-white transition-colors"><i class="fas fa-caret-right text-primary mr-2"></i> Water Heaters</a></li>
+              <li><a href="#" class="hover:text-white transition-colors"><i class="fas fa-caret-right text-primary mr-2"></i> Drain Cleaning</a></li>
+              <li><a href="#" class="hover:text-white transition-colors"><i class="fas fa-caret-right text-primary mr-2"></i> Emergency 24/7</a></li>
+            </ul>
+          </div>
+
+          <div class="reveal">
+            <h5 class="text-xl font-bold mb-8 relative inline-block">Get In Touch <span class="absolute bottom-0 left-0 w-8 h-1 bg-primary"></span></h5>
+            <ul class="space-y-6 text-gray-400">
+              <li class="flex items-start gap-4">
+                <i class="fas fa-map-marker-alt text-primary mt-1"></i>
+                <span>Serving all of Los Angeles <br> & Orange County</span>
+              </li>
+              <li class="flex items-center gap-4">
+                <i class="fas fa-phone-alt text-primary"></i>
+                <span class="text-white font-bold">+1 323-239-8505</span>
+              </li>
+              <li class="flex items-center gap-4">
+                <i class="fas fa-envelope text-primary"></i>
+                <span>service@laocplumbingpro.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
+          <p>© 2026 L.A to O.C Plumbing Pro. All Rights Reserved. Latino-Owned & Operated.</p>
+          <div class="flex gap-6">
+            <i class="fab fa-cc-visa text-2xl opacity-30"></i>
+            <i class="fab fa-cc-mastercard text-2xl opacity-30"></i>
+            <i class="fab fa-cc-amex text-2xl opacity-30"></i>
+            <i class="fab fa-google-pay text-2xl opacity-30"></i>
+            <i class="fab fa-apple-pay text-2xl opacity-30"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating UI -->
+    <!-- Call Button (Mobile Only) -->
+    <a href="tel:+13232398505" class="fixed bottom-6 left-6 z-[100] md:hidden bg-blue-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl animate-bounce">
+      <i class="fas fa-phone-alt text-xl"></i>
+    </a>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/13232398505" target="_blank" class="fixed bottom-6 right-6 z-[100] bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300">
+      <i class="fab fa-whatsapp text-3xl"></i>
+      <span class="absolute -top-2 -left-2 bg-red-500 text-[10px] font-bold px-2 py-0.5 rounded-full">LIVE</span>
+    </a>
+
+    <script type="module" src="/src/script.js"></script>
+  </body>
+</html>
+

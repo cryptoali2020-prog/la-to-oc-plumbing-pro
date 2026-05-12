@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1a56db;
+  --color-secondary: #f97316;
+  --color-dark: #1f2937;
+  --color-light: #f9fafb;
+  --font-space: "Space Grotesk", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    @apply bg-white text-gray-900 overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .glass-dark {
+    @apply bg-gray-900/40 backdrop-blur-lg border border-white/10;
+  }
+
+  .btn {
+    @apply px-6 py-3 rounded-full font-semibold transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-orange-600 hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-white;
+  }
+
+  .service-card {
+    @apply p-8 rounded-3xl bg-white shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col items-start gap-4 cursor-default;
+  }
+
+  .service-icon {
+    @apply w-12 h-12 flex items-center justify-center rounded-2xl bg-blue-50 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 text-2xl;
+  }
+
+  .nav-link {
+    @apply font-medium text-gray-600 hover:text-primary transition-colors duration-300 relative py-2;
+  }
+
+  .nav-link::after {
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+}
+
+/* Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Custom testimonial slider */
+.testimonial-container::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* FAQ Accordion */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-item.active .faq-content {
+  max-height: 500px;
+  @apply pb-6 pt-2;
+}
+
+.faq-item.active .faq-icon {
+  @apply rotate-180;
+}
+
+/* Mobile Nav */
+#mobile-menu {
+  clip-path: circle(0% at 100% 0%);
+  transition: clip-path 0.5s ease-in-out;
+}
+
+#mobile-menu.open {
+  clip-path: circle(150% at 100% 0%);
+}
+
+/* Counters */
+.counter {
+  @apply font-bold text-4xl lg:text-5xl text-primary;
+}
